@@ -392,3 +392,8 @@ function switchpage(page){
     }
 
 }
+
+
+function loadproject(){
+    location.href = 'project.html'
+}

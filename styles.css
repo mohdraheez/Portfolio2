@@ -9,7 +9,6 @@
 
 body {
     background-color: #1B2430;
-    /* background-color: #253559; */
     font-family: 'Josefin Sans', sans-serif;
     color: white;
     overflow: hidden;
@@ -453,6 +452,64 @@ body {
     z-index: 1;
 }
 
+.projectlist{
+    width: 500px;
+    height: 200px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.projectlist >li{
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.projectlist >li >span,.projectlist>p{
+    font-size: 15px;
+}
+
+.projects{
+    z-index: 0;
+}
+.showmore{
+    position: relative;
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    border:none;
+    background-color:#D2001A;
+    color:white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+}
+
+.showmore:hover{
+    animation: moveup 1s;
+    top:-10px;
+    opacity:0.7;
+
+}
+
+@keyframes moveup {
+    0%{
+        top:0;
+        opacity: 1;
+    }
+    100%{
+        top:-10px;
+    }
+}
+
+
+
+#instagram,
+#linkedin,
+#github,
+#facebook,
+#twitter{
+    color:white;
+}
+
 #instagram:hover {
     color: #C13584;
 }
@@ -499,7 +556,6 @@ body {
     text-align: justify;
     width: 95%;
 }
-
 .aboutcontent {
     font-size: 21px;
 }

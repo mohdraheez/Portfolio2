@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
+body{
+    background-color: white;
+    overflow:inherit;
+    height:100vh;
+}
+
+.main{
+    background-color: #1B2430;
+    width:100%;
+    height:100vh;
+}
+
+.navelem{
+    width: 6.5%;
+}
+
+.navtitle{
+    color:#CF0A0A;
+}
+.projects{
+    top:0;
+}
+
+.projectslist{
+    display: flex;
+    width:100%;
+    height: 150%;
+    flex-direction: column;
+    position: absolute;
+    top:100%;
+    align-items: center;
+}
+
+.project1,.project2{
+    width:500px;
+    height: 400px;
+    background-color:#1B2430;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+
+
+p{
+    text-align: justify;
+    padding:40px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+
+.projecthead{
+    font-family: 'Saira Stencil One', cursive;
+    padding-top: 20px;
+    font-size:35px;
+}
+
+.projectitems{
+    display: flex;
+    position: relative;
+    top: 20%;
+    justify-content: space-around;
+}
+
+.item1,.item2{
+    display: flex;
+    background-color: white;
+    width: 200px;
+    margin-right: 10px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.item1{
+    border-top-left-radius: 20px;
+}
+
+.item2{
+    border-bottom-right-radius: 20px;
+}
+
+.item1>h3,.item2>h3{
+    font-size: 25px;
+    position: relative;
+    top:10%;
+    color:black
+}
+
+.item2{
+    margin-right: 0;
+}
+
+.itemimg{
+    width: 40px;
+    height: 40px;
+}
+
