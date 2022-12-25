@@ -35,7 +35,49 @@ body {
 
 }
 
-.b1,.b2,.b3,.b4,.b5{
+.div1 {
+    position: absolute;
+    pointer-events: none;
+    filter: drop-shadow(0 0 15px rgb(0 0 0 / .5));
+    animation: fadeInOut 1s linear infinite;
+}
+
+@keyframes fadeInOut {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    20%,
+    80% {
+        opacity: 1;
+    }
+}
+
+.star {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: moveShape 1s linear infinite;
+    opacity: 0.4;
+}
+
+@keyframes moveShape {
+    0% {
+        transform: translate(0) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(100px) rotate(360deg);
+    }
+}
+
+.b1,
+.b2,
+.b3,
+.b4,
+.b5 {
     visibility: hidden;
 }
 
@@ -54,27 +96,29 @@ body {
     visibility: visible;
 }
 
-.btnout{
+.btnout {
     animation: menuout 1s;
 }
 
 @keyframes menuin {
-    0%{
+    0% {
         opacity: 0;
         left: 550px;
     }
-    100%{
+
+    100% {
         opacity: 1;
         left: 0px;
     }
 }
 
 @keyframes menuout {
-    0%{
+    0% {
         opacity: 1;
-        left:0;
+        left: 0;
     }
-    100%{
+
+    100% {
         opacity: 0;
         left: 550px;
     }
@@ -993,42 +1037,5 @@ body {
     .about-img {
         width: 220px;
         right: 105%;
-    }
-}
-
-.div1 {
-    position: absolute;
-    pointer-events: none;
-    filter: drop-shadow(0 0 15px rgb(0 0 0 / .5));
-    animation: fadeInOut 1s linear infinite;
-}
-
-@keyframes fadeInOut {
-
-    0%,
-    100% {
-        opacity: 0;
-    }
-
-    20%,
-    80% {
-        opacity: 1;
-    }
-}
-
-.star {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    animation: moveShape 1s linear infinite;
-}
-
-@keyframes moveShape {
-    0% {
-        transform: translate(0) rotate(0deg);
-    }
-
-    100% {
-        transform: translate(100px) rotate(360deg);
     }
 }
