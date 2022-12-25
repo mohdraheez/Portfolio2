@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+
+.div1 {
+    position: absolute;
+    pointer-events: none;
+    filter: drop-shadow(0 0 15px rgb(0 0 0 / .5));
+    animation: fadeInOut 1s linear infinite;
+}
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+    }
+    20%, 80% {
+        opacity: 1;
+    }
+}
+.star{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: moveShape 1s linear infinite;
+}
+@keyframes moveShape {
+    0% {
+        transform: translate(0) rotate(0deg);
+    }
+    100% {
+        transform: translate(100px) rotate(360deg);
+    }
+}
+    </style>
+
+    <title>Particles</title>
+</head>
+<body>
+
+<script text="text/javaScript">
+
+document.addEventListener('mousemove', function(e){
+
+  var imgs = [
+    'r.png',
+    'html.png',
+    'css.png',
+    'flower.png',
+    'js.png'
+  ]
+      var rand = Math.floor(Math.random()*5);
+      i=0;
+      let body = document.querySelector('body');
+    let div = document.createElement('div');
+    div.classList.add('div1');
+    let star = document.createElement('img');
+    star.classList.add('star');
+    star.setAttribute("name", "star");
+    star.setAttribute("src","public/"+imgs[rand]);
+    let x = e.offsetX;
+    let y = e.offsetY;
+    div.style.left = x + 'px';
+    div.style.top = y + 'px';
+
+    let size = Math.random() * 20;
+
+    star.style.width = 20 + size + 'px';
+    star.style.height = 20 + size + 'px';
+
+
+    let transformValue = Math.random() * 360;
+    div.style.transform = 'rotate('+transformValue+'deg)';
+
+    div.appendChild(star);
+    body.appendChild(div);
+
+    setTimeout(function () {
+        star.remove();
+    },500)
+})
+
+</script>
+</body>
+</html>
