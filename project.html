@@ -16,7 +16,7 @@
                 <h2>Mohd Raheez</h2>
             </div>
             <div class="navelem">
-                <button class="open"><img class="btnimg" src="public/back.png" alt="back" style="width:60px"></button>
+                <button class="open"><img class="pbtnimg" src="public/back.png" alt="back" style="width:60px"></button>
             </div>
         </div>
     </div>
@@ -26,7 +26,6 @@
         <ol class="projectlist">
             <li>Portfolio <span>(HTML,CSS & JS)</span></li>
             <li>Wordle Unlimited <span>(HTML,CSS & JS)</span></li>
-            <p>Note: Click below button to browse source code</p>
         </ol>
     </div>
 
@@ -69,13 +68,15 @@
                         <h3>Website</h3>
                     </div>
                 </div>
-        </div>
+            </div>
+            
     </div>
 
     <script>
-        setTimeout(()=>{
-            document.querySelector('.box').style.display = 'none';
-        },1500)
+        document.querySelector('.open').addEventListener('click',()=>{
+            window.location.href = 'index.html#projects';
+        })
+
     </script>
 </body>
 </html>
