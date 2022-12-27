@@ -19,7 +19,7 @@ body {
 .preloader{
     width: 100vw;
     height:100vh;
-    background-color: #061225;
+    background-color: #03070d;
     z-index:1;
     position: fixed;
     animation :preslidup 1.15s linear;
@@ -368,6 +368,10 @@ body {
     top: 100%;
 }
 
+.about{
+    z-index: 0;
+}
+
 .aboutmaincontent {
     z-index: 1;
 }
@@ -412,6 +416,20 @@ body {
     position: relative;
     top: 5px;
     left: 1%;
+}
+
+.resume{
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'Crimson Text', serif;
+    box-shadow: 2px 2px 1px #68B984;
+}
+
+.resume:hover{
+    background-color: #68B984;
+    box-shadow: 0 0 0;
+    border: 1px solid white;
 }
 
 .headinghr2,
