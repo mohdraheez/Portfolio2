@@ -8,7 +8,8 @@
 }
 
 body {
-    background-color: #1B2430;
+    /* background-color: #1B2430; */
+    background-color: #09101b;
     font-family: 'Josefin Sans', sans-serif;
     color: white;
     overflow: hidden;
@@ -151,7 +152,8 @@ body {
     justify-content: center;
     align-items: center;
     bottom: 0;
-    background-color: #1B2430;
+    /* background-color: #1B2430; */
+    background-color: #09101b;
 }
 
 .nav {
@@ -239,7 +241,7 @@ body {
     border-radius: 650px;
     background-color: white;
     position: fixed;
-    opacity: 0.05;
+    opacity: 0.02;
 }
 
 .c {
@@ -248,7 +250,7 @@ body {
     border-radius: 575px;
     background-color: white;
     position: fixed;
-    opacity: 0.05;
+    opacity: 0.02;
 }
 
 
@@ -258,7 +260,7 @@ body {
     border-radius: 500px;
     background-color: white;
     position: fixed;
-    opacity: 0.05;
+    opacity: 0.02;
 }
 
 
@@ -268,7 +270,7 @@ body {
     height: 850px;
     border-radius: 425px;
     position: fixed;
-    opacity: 0.05;
+    opacity: 0.02;
 }
 
 .f {
@@ -277,7 +279,7 @@ body {
     height: 700px;
     border-radius: 350px;
     position: fixed;
-    opacity: 0.05;
+    opacity: 0.02;
 }
 
 .g {
@@ -286,7 +288,7 @@ body {
     height: 550px;
     border-radius: 275px;
     position: fixed;
-    opacity: 0.05;
+    opacity: 0.02;
 }
 
 .h {
@@ -295,7 +297,7 @@ body {
     border-radius: 200px;
     background-color: white;
     position: relative;
-    opacity: 0.05;
+    opacity: 0.02;
 }
 
 .i {

@@ -17,9 +17,12 @@ var projects = document.querySelector('#projects');
 var contact = document.querySelector('#contact');
 var preloader = document.querySelector('.preloader');
 
+
 setTimeout(()=>{
     preloader.style.display = 'none';
 },1000);
+
+loader();
 
 window.addEventListener('hashchange', function (e) {
     var loc = location.hash;
@@ -31,7 +34,6 @@ window.addEventListener('hashchange', function (e) {
     }
 });
 
-loader();
 
 body.addEventListener('pointermove', (e) => {
 

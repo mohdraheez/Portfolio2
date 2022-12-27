@@ -1,19 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
 body{
-    background-color: white;
+    background-color: #061225;
     overflow:inherit;
     height:200vh;
 }
 
 .nav{
-    position:absolute;
-    z-index: 1;
+    z-index: 999;
 }
 
-
-
 .main{
-    background-color: #061225;
+    
+    background-color:transparent;
     width:100%;
     height:100vh;
 }
@@ -40,105 +39,88 @@ body{
 }
 
 .projectslist{
+    margin-top: 10%;
     display: flex;
-    width:100%;
-    height: 150%;
     flex-direction: column;
-    position: absolute;
-    top:100%;
+    justify-content: space-between;
     align-items: center;
+    color:#E8F9FD;
 }
 
-.project1,.project2{
-    width:500px;
+.project{
+    display: flex;
+    flex-direction:column;
+    border:1px solid #68B984;
+    box-shadow: 15px 15px 0px #68B984;
+    width: 40%;
     height: 400px;
-    background-color: #061225;
-    display: flex;
+    margin-bottom: 100px;
     align-items: center;
-    flex-direction: column;
-    margin-top: 100px;
-}
-
-p{
-    text-align: justify;
-    padding:40px;
-    padding-top:10px;
-    padding-bottom: 10px;
-    font-size: 15px;
-}
-
-.projecthead{
-    font-family: 'Saira Stencil One', cursive;
-    padding-top: 20px;
-    font-size:35px;
-}
-
-.projectitems{
-    display: flex;
-    position: relative;
-    top: 20%;
     justify-content: space-around;
+    font-family: 'Crimson Text', serif;
 }
 
-.item1,.item2{
+.project>h4{
+    width: 80%;
+    text-align: center;
+}
+.projectbtn>a>button{
+    width: 100px;
+    height: 50px;
+    font-size: 18px;
+    font-family: 'Crimson Text', serif;
+}
+
+.projectbtn>a>button:hover{
+    background-color: #68B984;
+}
+
+.projectbtn>a>button>div{
     display: flex;
-    background-color: white;
-    width: 200px;
-    margin-right: 10px;
-    height: 80px;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    flex-direction: row;
 }
 
-.item1>h3,.item2>h3{
-    font-size: 25px;
-    position: relative;
-    top:10%;
-    color:black
+.projectbtn>a>button>div>img{
+    width: 20px;
 }
 
-.item2{
-    margin-right: 0;
-}
-
-.itemimg{
-    width: 40px;
-    height: 40px;
+.proimg{
+    width:250px;
+    border : 1px solid #68B984;
+    border-radius: 10px;
 }
 
 @media screen and (max-width:768px) {
-    .project1,.project2{
-        width:300px;
-        height: 300px;
-    }
-
-    .item1,.item2{
-        width: 100px;
-        margin-right: 10px;
-        height: 50px;
-    }
-
-    .itemimg{
-        width: 20px;
-        height: 20px;
-    }
-
-    h2{
-        font-size: 15px;
-    }
-
-    .item1>h3,.item2>h3{
-        font-size: 15px;
-    }
-
-    .projecthead{
-        font-size:25px;
-    }
-
+    
     .open{
         right: 10px;
         bottom:-20px;
     }
+
+    .project{
+        box-shadow: 10px 10px 0px #68B984;
+        width: 80%;
+    }
     
+}
+
+@media screen and (max-width:281px) {
+    
+    .proimg{
+        width:200px;
+        border : 1px solid #68B984;
+        border-radius: 10px;
+    }
+
+    .project>h3{
+        font-size: 15px;
+    }
+
+    .projectbtn>a>button{
+        width: 80px;
+        height: 40px;
+        font-size: 18px;
+        font-family: 'Crimson Text', serif;
+    }
 }
