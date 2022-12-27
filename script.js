@@ -15,6 +15,11 @@ var skills = document.querySelector('#skills');
 var contactdiv = document.querySelector('.contactdiv');
 var projects = document.querySelector('#projects');
 var contact = document.querySelector('#contact');
+var preloader = document.querySelector('.preloader');
+
+setTimeout(()=>{
+    preloader.style.display = 'none';
+},1000);
 
 window.addEventListener('hashchange', function (e) {
     var loc = location.hash;
