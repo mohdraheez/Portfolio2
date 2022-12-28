@@ -6,25 +6,11 @@ body{
     height:200vh;
 }
 
-.nav{
-    z-index: 999;
-}
-
 .main{
     
     background-color:transparent;
     width:100%;
     height:100vh;
-}
-
-.pbtnimg{
-    display: block;
-    height: 60px;
-}
-
-.open{
-    z-index: 1;
-    position: absolute;
 }
 
 .navelem{

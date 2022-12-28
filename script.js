@@ -253,27 +253,19 @@ function swipeddown() {
 }
 
 document.querySelector('.open').addEventListener('click', () => {
-    if (document.querySelector('.btnimg').getAttribute('src') === 'public/bar.png') {
-        document.querySelector('.btnimg').setAttribute('src', 'public/x.png')
-        for (var i = 0; i < 5; i++) {
-            document.querySelector('.b' + (i + 1)).classList.add('btn');
-        }
-    }
-    else {
-        document.querySelector('.btnimg').setAttribute('src', 'public/bar.png')
+        document.querySelector('.navelem').style.visibility = 'visible';
+        document.querySelector('.navelem').classList.add('navelemin');
+        setTimeout(()=>{
+            document.querySelector('.navelem').classList.remove('navelemin');
+        },250)
+})
 
-        for (var i = 0; i < 5; i++) {
-            document.querySelector('.b' + (i + 1)).classList.add('btnout');
-        }
-
-        setTimeout(() => {
-            for (var i = 0; i < 5; i++) {
-                document.querySelector('.b' + (i + 1)).classList.remove('btn');
-                document.querySelector('.b' + (i + 1)).classList.remove('btnout');
-            }
-        }, 100)
-
-    }
+document.querySelector('.navelemopen').addEventListener('click', () => {
+    document.querySelector('.navelem').classList.add('navelemout');
+        setTimeout(()=>{
+            document.querySelector('.navelem').classList.remove('navelemout');
+            document.querySelector('.navelem').style.visibility = 'hidden';
+        },250)
 })
 
 
@@ -370,8 +362,6 @@ function loader() {
         setTimeout(() => {
             home.classList.remove('fadein');
         }, 1000)
-
-        console.log('added home')
     }
 
     if (loc === '#about') {
@@ -380,9 +370,6 @@ function loader() {
         setTimeout(() => {
             about.classList.remove('fadein');
         }, 1000)
-
-        console.log('added about')
-
     }
 
     if (loc === '#skills') {
@@ -391,9 +378,6 @@ function loader() {
         setTimeout(() => {
             skills.classList.remove('fadein');
         }, 1000)
-
-        console.log('added skills')
-
     }
 
     if (loc === '#projects') {
@@ -402,9 +386,6 @@ function loader() {
         setTimeout(() => {
             projects.classList.remove('fadein');
         }, 1000)
-
-        console.log('added project')
-
     }
 
     if (loc === '#contact') {
@@ -413,7 +394,5 @@ function loader() {
         setTimeout(() => {
             contact.classList.remove('fadein');
         }, 1000)
-        console.log('added contact')
-
     }
 }
