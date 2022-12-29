@@ -272,6 +272,11 @@ document.querySelector('.navelemopen').addEventListener('click', () => {
 for (var i = 0; i < 5; i++)
     document.querySelector('.b' + (i + 1)).addEventListener('click', (e) => {
         switchpage(e.target.classList[0]);
+        document.querySelector('.navelem').classList.add('navelemout');
+        setTimeout(()=>{
+            document.querySelector('.navelem').classList.remove('navelemout');
+            document.querySelector('.navelem').style.visibility = 'hidden';
+        },250)
     });
 
 
@@ -345,8 +350,6 @@ function switchpage(page) {
     }
 
 }
-
-
 
 function loadproject() {
     location.href = 'project.html'
