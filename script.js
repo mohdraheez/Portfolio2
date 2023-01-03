@@ -18,9 +18,9 @@ var contact = document.querySelector('#contact');
 var preloader = document.querySelector('.preloader');
 
 
-setTimeout(()=>{
-    preloader.style.display = 'none';
-},1000);
+//setTimeout(()=>{
+ //   preloader.style.display = 'none';
+//},1000);
 
 loader();
 
