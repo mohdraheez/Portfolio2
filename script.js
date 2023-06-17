@@ -18,8 +18,7 @@ var contact = document.querySelector('#contact');
 var preloader = document.querySelector('.preloader');
 var skillset = ["Webdeveloper","Programmer"];
 var characters = [
-    'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',
-    '1','2','3','4','5','6','7','8','9','0','~','!','@','#','$','%','^','&','?'
+    'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'
 ]
 
 var flag=0;
@@ -27,7 +26,7 @@ var i=1;
 function randomgenerator(){
     var char='';
     for(let j=0;j<12;j++){
-        var random = Math.round(45*Math.random());
+        var random = Math.round(25*Math.random());
         char +=characters[random-1];
     }
 
